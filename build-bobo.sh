@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-# Load nvm
 export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
-# Use the exact Node version required by the repo
-nvm install
 nvm use
 
 cd "$(dirname "$0")"
