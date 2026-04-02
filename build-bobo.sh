@@ -12,8 +12,7 @@ echo ""
 echo "bobo build"
 echo ""
 echo "This will:"
-echo "  1. npm install (~2 min)"
-echo "  2. Build bobo for macOS arm64 (~30 min)"
+echo "  Build bobo for macOS arm64 (~30 min)"
 echo ""
 echo "Output: ../VSCode-darwin-arm64/bobo.app"
 echo ""
@@ -22,11 +21,6 @@ if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
   echo "Cancelled."
   exit 0
 fi
-
-echo ""
-echo "Installing dependencies..."
-npm install
-npm install @github/copilot-language-server
 
 echo ""
 echo "Building bobo (this takes ~30 min)..."
